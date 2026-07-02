@@ -1,6 +1,6 @@
 // ============ I18N: language dictionary + management ============
 const I18N = {
-  lang: localStorage.getItem('portfolio-lang') || 'zh',
+  lang: localStorage.getItem('portfolio-lang') || 'en',
 
   dict: {
     zh: {

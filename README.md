@@ -14,9 +14,7 @@
 
 ## About
 
-Personal resume site for **Rocky Chi** (池忠强) — Java Architect / AI Engineer. Highlights career timeline, featured projects, and technical competencies.
-
-[Java 架构师 / AI Engineer 的个人简历站点。]
+Personal resume site for **Rocky Chi** — Java Architect / AI Engineer. Highlights career timeline, featured projects, and technical competencies.
 
 ## Built With
 
