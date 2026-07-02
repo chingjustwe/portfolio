@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Favicon 方案对比</title>
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body { font-family: system-ui, -apple-system, sans-serif; background: #1B1916; color: #EDE6D8; padding: 40px; }
+  h1 { font-size: 28px; margin-bottom: 8px; font-weight: 600; letter-spacing: -0.02em; }
+  p.sub { color: #9A9082; margin-bottom: 40px; font-size: 14px; }
+  .grid { display: grid; grid-template-columns: repeat(5, 1fr); gap: 32px; }
+  .card { background: #211D18; border: 1px solid rgba(237,230,216,0.14); padding: 28px 20px 20px; text-align: center; }
+  .card h2 { font-size: 18px; font-weight: 600; margin-bottom: 4px; }
+  .card .desc { color: #9A9082; font-size: 12px; margin-bottom: 20px; }
+  .sizes { display: flex; flex-direction: column; align-items: center; gap: 20px; }
+  .size-row { display: flex; flex-direction: column; align-items: center; gap: 4px; }
+  .size-row span { font-size: 10px; color: #6B6359; font-family: monospace; }
+  .favicon-wrap { background: #F2EDE3; border-radius: 4px; display: flex; align-items: center; justify-content: center; }
+  .favicon-wrap.dark { background: #161310; }
+  .dark-toggle { margin-top: 20px; display: flex; gap: 8px; justify-content: center; }
+  .dark-toggle button { background: none; border: 1px solid rgba(237,230,216,0.14); color: #EDE6D8; padding: 4px 12px; border-radius: 4px; cursor: pointer; font-size: 12px; }
+  .dark-toggle button.active { background: #B8431C; border-color: #B8431C; }
+  svg { display: block; }
+</style>
+</head>
+<body>
+
+<h1>Portfolio Favicon · 方案对比</h1>
+<p class="sub">5 种设计风格，浅色/深色背景预览</p>
+
+<div class="grid" id="app">
+  <div class="card" data-theme="light">
+    <h2>方案 1</h2>
+    <p class="desc">RC 连笔几何标</p>
+    <div class="sizes">
+      <div class="size-row"><span>64×64</span><div class="favicon-wrap" style="width:64px;height:64px"><img src="favicon-rc.svg" width="64" height="64"></div></div>
+      <div class="size-row"><span>32×32</span><div class="favicon-wrap" style="width:32px;height:32px"><img src="favicon-rc.svg" width="32" height="32"></div></div>
+      <div class="size-row"><span>16×16</span><div class="favicon-wrap" style="width:16px;height:16px"><img src="favicon-rc.svg" width="16" height="16"></div></div>
+    </div>
+  </div>
+
+  <div class="card" data-theme="light">
+    <h2>方案 2</h2>
+    <p class="desc">>_ 终端提示符</p>
+    <div class="sizes">
+      <div class="size-row"><span>64×64</span><div class="favicon-wrap" style="width:64px;height:64px"><img src="favicon-terminal.svg" width="64" height="64"></div></div>
+      <div class="size-row"><span>32×32</span><div class="favicon-wrap" style="width:32px;height:32px"><img src="favicon-terminal.svg" width="32" height="32"></div></div>
+      <div class="size-row"><span>16×16</span><div class="favicon-wrap" style="width:16px;height:16px"><img src="favicon-terminal.svg" width="16" height="16"></div></div>
+    </div>
+  </div>
+
+  <div class="card" data-theme="light">
+    <h2>方案 3</h2>
+    <p class="desc">雷达图五边形</p>
+    <div class="sizes">
+      <div class="size-row"><span>64×64</span><div class="favicon-wrap" style="width:64px;height:64px"><img src="favicon-radar.svg" width="64" height="64"></div></div>
+      <div class="size-row"><span>32×32</span><div class="favicon-wrap" style="width:32px;height:32px"><img src="favicon-radar.svg" width="32" height="32"></div></div>
+      <div class="size-row"><span>16×16</span><div class="favicon-wrap" style="width:16px;height:16px"><img src="favicon-radar.svg" width="16" height="16"></div></div>
+    </div>
+  </div>
+
+  <div class="card" data-theme="light">
+    <h2>方案 4</h2>
+    <p class="desc">{R} 代码括号</p>
+    <div class="sizes">
+      <div class="size-row"><span>64×64</span><div class="favicon-wrap" style="width:64px;height:64px"><img src="favicon-braces.svg" width="64" height="64"></div></div>
+      <div class="size-row"><span>32×32</span><div class="favicon-wrap" style="width:32px;height:32px"><img src="favicon-braces.svg" width="32" height="32"></div></div>
+      <div class="size-row"><span>16×16</span><div class="favicon-wrap" style="width:16px;height:16px"><img src="favicon-braces.svg" width="16" height="16"></div></div>
+    </div>
+  </div>
+
+  <div class="card" data-theme="light">
+    <h2>方案 5</h2>
+    <p class="desc">氵部首抽象波纹</p>
+    <div class="sizes">
+      <div class="size-row"><span>64×64</span><div class="favicon-wrap" style="width:64px;height:64px"><img src="favicon-water.svg" width="64" height="64"></div></div>
+      <div class="size-row"><span>32×32</span><div class="favicon-wrap" style="width:32px;height:32px"><img src="favicon-water.svg" width="32" height="32"></div></div>
+      <div class="size-row"><span>16×16</span><div class="favicon-wrap" style="width:16px;height:16px"><img src="favicon-water.svg" width="16" height="16"></div></div>
+    </div>
+  </div>
+</div>
+
+<div class="dark-toggle">
+  <button id="toggle-light" class="active" onclick="setTheme('light')">浅色背景</button>
+  <button id="toggle-dark" onclick="setTheme('dark')">深色背景</button>
+</div>
+
+<script>
+function setTheme(t) {
+  document.querySelectorAll('.favicon-wrap').forEach(el => {
+    el.style.background = t === 'dark' ? '#161310' : '#F2EDE3';
+  });
+  document.querySelectorAll('.card').forEach(el => {
+    el.style.background = t === 'dark' ? '#161310' : '#211D18';
+  });
+  document.getElementById('toggle-light').classList.toggle('active', t === 'light');
+  document.getElementById('toggle-dark').classList.toggle('active', t === 'dark');
+}
+</script>
+
+</body>
+</html>
