@@ -88,6 +88,10 @@ The site will be live at `https://chingjustwe.github.io/portfolio/`.
 - **Layout / styling** → edit theme files or `index.html` CSS variables
 - **Always update both themes** when adding DOM elements or interactions
 
+## Show your support
+
+Give a ⭐ if you like this website!
+
 ## License
 
 This project is open source for learning and reference. Built with care & vanilla JS.
