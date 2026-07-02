@@ -7,7 +7,7 @@ Portfolio.registerTheme('original', {
       <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 w-full h-full flex items-center justify-between">
         <a href="#hero" onclick="event.preventDefault();window.scrollTo({top:0,behavior:'smooth'})" class="flex items-center gap-2.5 group cursor-pointer">
           <div class="w-7 h-7 u-r-md overflow-hidden ring-2 u-br-soft group-hover:ring-blue-500/50 transition-all duration-300">
-            <img src="https://avatars.githubusercontent.com/chingjustwe" alt="" class="w-full h-full object-cover" />
+            <img src="images/link.jpg" alt="" class="w-full h-full object-cover" />
           </div>
           <div class="flex items-baseline gap-1.5">
             <span class="font-semibold text-sm u-ink">池忠强</span>
@@ -101,7 +101,7 @@ Portfolio.registerTheme('original', {
               </div>
               <div class="hero-tab-content p-5 min-h-[340px] flex flex-col justify-center" id="tab-profile">
                 <div class="flex flex-col items-center">
-                  <div class="w-28 h-28 u-r-lg overflow-hidden border-2 border-blue-500/20 shadow-lg shadow-blue-500/10 mb-3"><img src="https://avatars.githubusercontent.com/chingjustwe" alt="Rocky Chi" class="w-full h-full object-cover" /></div>
+                  <div class="w-28 h-28 u-r-lg overflow-hidden border-2 border-blue-500/20 shadow-lg shadow-blue-500/10 mb-3"><img src="images/link.jpg" alt="Rocky Chi" class="w-full h-full object-cover" /></div>
                   <h3 class="u-ink font-bold text-lg">Rocky Chi</h3>
                   <p class="text-xs u-mono text-blue-400 mb-3">${getData().bio.subtitle}</p>
                   <div class="w-full grid grid-cols-2 gap-2 text-left u-mono text-[11px]">

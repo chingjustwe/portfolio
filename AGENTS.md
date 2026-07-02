@@ -11,14 +11,20 @@ No installation or build step needed. Open `src/index.html` directly in a browse
 ```
 src/
 ├── index.html          # Entry point, loads all JS
-├── i18n.js             # i18n (zh-CN / en)
-├── data.js             # All resume data (bilingual)
-├── core.js             # Core: Portfolio object (render, modal, slides, radar chart)
-├── theme-original.js   # Theme: glassmorphism
-└── theme-editorial.js  # Theme: warm paper print style
+├── css/
+│   └── style.css       # All custom CSS (theme variables, utilities, animations)
+├── js/
+│   ├── i18n.js         # i18n (zh-CN / en)
+│   ├── data.js         # All resume data (bilingual)
+│   └── core.js         # Core: Portfolio object (render, modal, slides, radar chart)
+├── theme/
+│   ├── theme-original.js   # Theme: glassmorphism
+│   └── theme-editorial.js  # Theme: warm paper print style
+└── images/
+    └── link.jpg        # Avatar / OG image
 ```
 
-JS load order is strict: `i18n.js → data.js → core.js → theme-*.js`, then `Portfolio.init()`.
+JS load order is strict: `js/i18n.js → js/data.js → js/core.js → theme/*.js`, then `Portfolio.init()`.
 
 ## Key Conventions
 

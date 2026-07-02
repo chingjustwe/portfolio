@@ -56,14 +56,20 @@ open src/index.html
 ```
 src/
 ├── index.html            # Entry point
-├── i18n.js               # i18n dictionary (zh ↔ en)
-├── data.js               # Resume data (bilingual)
-├── core.js               # Portfolio engine (render, modal, slides, chart)
-├── theme-original.js     # Glassmorphism theme
-└── theme-editorial.js    # Warm paper theme
+├── css/
+│   └── style.css         # All custom CSS
+├── js/
+│   ├── i18n.js           # i18n dictionary (zh ↔ en)
+│   ├── data.js           # Resume data (bilingual)
+│   └── core.js           # Portfolio engine (render, modal, slides, chart)
+├── theme/
+│   ├── theme-original.js     # Glassmorphism theme
+│   └── theme-editorial.js    # Warm paper theme
+└── images/
+    └── link.jpg          # Avatar / OG image
 ```
 
-JS load order: `i18n.js → data.js → core.js → theme-*.js → Portfolio.init()`
+JS load order: `js/i18n.js → js/data.js → js/core.js → theme/*.js → Portfolio.init()`
 
 ## Deployment
 
