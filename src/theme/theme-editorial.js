@@ -88,9 +88,9 @@ Portfolio.registerTheme('editorial', {
                 <div class="u-elev p-3.5 text-center"><span class="block u-serif text-2xl font-semibold u-accent">6+</span><span class="block u-mono text-[10px] u-dim mt-0.5">${I18N.t('stat_arch')}</span></div>
                 <div class="u-elev p-3.5 text-center"><span class="block u-serif text-2xl font-semibold u-accent2">12+</span><span class="block u-mono text-[10px] u-dim mt-0.5">${I18N.t('stat_dev')}</span></div>
               </div>
-              <div class="flex items-center gap-2 mt-5 pt-4 border-t u-br-rule">
-                <span class="relative flex h-2 w-2"><span class="animate-ping absolute inline-flex h-full w-full rounded-full opacity-75" style="background:var(--c-accent-2)"></span><span class="relative inline-flex rounded-full h-2 w-2" style="background:var(--c-accent-2)"></span></span>
+              <div class="flex items-center justify-end gap-2 mt-5 pt-4 border-t u-br-rule">
                 <span class="u-mono text-[11px] u-muted">${I18N.t('hero_available_short')}</span>
+                <span class="relative flex h-2 w-2"><span class="animate-ping absolute inline-flex h-full w-full rounded-full opacity-75" style="background:var(--c-accent-2)"></span><span class="relative inline-flex rounded-full h-2 w-2" style="background:var(--c-accent-2)"></span></span>
               </div>
             </aside>
             <div class="absolute -bottom-5 -left-5 floaty u-elev border u-br-rule px-4 py-2.5 flex items-center gap-2 u-mono text-[11px] u-ink max-w-[180px]">
